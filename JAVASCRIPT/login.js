@@ -5,11 +5,13 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     const password = document.getElementById("password").value;
     const errorMessage = document.getElementById("errorMessage");
 
-    if (username === "admin" && password === "1234") {
+    if (username === "labor" && password === "12345") {
         alert("Login successful!");
         errorMessage.style.display = "none";
     } else {
         errorMessage.textContent = "Invalid username or password!";
         errorMessage.style.display = "block";
     }
+
+    window.location.href = 'home_page.html';
 });
