@@ -1,17 +1,16 @@
 document.getElementById("loginForm").addEventListener("submit", function (e) {
-    e.preventDefault();
+    e.preventDefault(); // Prevent the default form submission behavior
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
     const errorMessage = document.getElementById("errorMessage");
 
-    if (username === "labor" && password === "12345") {
+    if (username === "admin" && password === "123") {
         alert("Login successful!");
-        errorMessage.style.display = "none";
+        errorMessage.style.display = "none"; // Hide the error message
+        window.location.href = 'home_page.html'; // Redirect only on successful login
     } else {
-        errorMessage.textContent = "Invalid username or password!";
-        errorMessage.style.display = "block";
+        errorMessage.textContent = "Invalid username or password!"; // Show error message
+        errorMessage.style.display = "block"; // Make the error message visible
     }
-
-    window.location.href = 'home_page.html';
 });

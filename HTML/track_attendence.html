@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Attendance</title>
+    <link rel="stylesheet" href="/CSS/track_attendence.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Track Attendance</h1>
+        <form id="attendance-form">
+            <label for="labor-name">Labor Name:</label>
+            <input type="text" id="labor-name" name="labor-name" required>
+
+            <label for="attendance-date">Date:</label>
+            <input type="date" id="attendance-date" name="attendance-date" required>
+
+            <label for="attendance-status">Attendance Status:</label>
+            <select id="attendance-status" name="attendance-status" required>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+                <option value="Leave">Leave</option>
+            </select>
+
+            <button type="submit">Track Attendance</button>
+        </form>
+
+        <h2>Attendance Records</h2>
+        <table id="attendance-records">
+            <thead>
+                <tr>
+                    <th>Labor Name</th>
+                    <th>Date</th>
+                    <th>Attendance Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Attendance records will be displayed here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/JAVASCRIPT/track_attendence.js"></script>
+</body>
+</html>

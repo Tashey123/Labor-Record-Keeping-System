@@ -7,41 +7,40 @@
     <link rel="stylesheet" href="/CSS/home_page.css">
 </head>
 <body>
-    <div class="wrapper">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <h2>Features</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="manage_record.html">Manage Labor Records</a>
-                    </li>
-                    <li>
-                        <a href="track-attendance.html">Track Attendance</a>
-                    </li>
-                    <li>
-                        <a href="calculate-wages.html">Calculate Wages</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Labor System</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <header>
-                <h1>Labor Record Keeping System</h1>
-            </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the Labor Record Management System</h1>
+            <p>
+                Manage and track labor records efficiently and effectively. Keep a detailed record of all labor activities with ease.
+            </p>
+            <a href="#features" class="btn">Explore Features</a>
+        </div>
+    </section>
 
-            <section class="hero">
-                <h2>Welcome to the Labor Record Management System</h2>
-                <p>Manage and track labor records efficiently and effectively. Keep a detailed record of all labor activities with ease.</p>
-
-            </section>
-
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <ul>
+            <li><a href="manage_record.html">✔️ Manage Labor Records</a></li>
+            <li><a href="track_attendance.html">✔️ Track Attendance</a></li>
+            <li><a href="calculate_wages.html">✔️ Calculate Wages</a></li>
             
-        </main>
-    </div>
+        </ul>
+    </section>
 
-    <script src="script.js"></script>
 </body>
 </html>
