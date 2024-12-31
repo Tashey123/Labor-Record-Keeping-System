@@ -8,37 +8,45 @@
 </head>
 <body>
     <div class="container">
-        <h1>Track Attendance</h1>
-        <form id="attendance-form">
-            <label for="labor-name">Labor Name:</label>
-            <input type="text" id="labor-name" name="labor-name" required>
+        <header>
+            <h1>Track Attendance</h1>
+        </header>
 
-            <label for="attendance-date">Date:</label>
-            <input type="date" id="attendance-date" name="attendance-date" required>
+        <section class="attendance-section">
+            <h2>Track Employee Attendance</h2>
+            <form id="attendance-form">
+                <label for="employee-name">Employee Name:</label>
+                <input type="text" id="employee-name" required>
 
-            <label for="attendance-status">Attendance Status:</label>
-            <select id="attendance-status" name="attendance-status" required>
-                <option value="Present">Present</option>
-                <option value="Absent">Absent</option>
-                <option value="Leave">Leave</option>
-            </select>
+                <label for="attendance-date">Attendance Date:</label>
+                <input type="date" id="attendance-date" required>
 
-            <button type="submit">Track Attendance</button>
-        </form>
+                <label for="attendance-status">Attendance Status:</label>
+                <select id="attendance-status" required>
+                    <option value="present">Present</option>
+                    <option value="absent">Absent</option>
+                    <option value="leave">Leave</option>
+                </select>
 
-        <h2>Attendance Records</h2>
-        <table id="attendance-records">
-            <thead>
-                <tr>
-                    <th>Labor Name</th>
-                    <th>Date</th>
-                    <th>Attendance Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Attendance records will be displayed here -->
-            </tbody>
-        </table>
+                <button type="submit">Submit Attendance</button>
+            </form>
+        </section>
+
+        <section class="attendance-log-section">
+            <h2>Attendance Log</h2>
+            <table id="attendance-log-table">
+                <thead>
+                    <tr>
+                        <th>Employee Name</th>
+                        <th>Attendance Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Attendance records will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
     </div>
 
     <script src="/JAVASCRIPT/track_attendence.js"></script>

@@ -6,52 +6,92 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f4f4f4;
     padding: 20px;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    background-color: #dbd6d6;
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
+header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #333;
 }
 
 .form-section {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+/* Use flexbox to center form elements */
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;  /* Centers the elements horizontally */
+    gap: 15px; /* Adds space between elements */
 }
 
+.input-group {
+    width: 100%; /* Ensure input fields take full width */
+    max-width: 400px; /* Limit maximum width */
+}
+
+/* Style the labels */
 label {
-    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    text-align: center; /* Center-align the label text */
 }
 
-input {
+/* Style input fields */
+input[type="text"],
+input[type="date"],
+input[type="number"] {
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;  /* Make input fields responsive */
+    max-width: 400px; /* Set a maximum width */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
 }
 
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+    border-color: #007BFF;
+}
+
+/* Style and center the Add Record button */
 button {
-    padding: 10px 15px;
+    padding: 12px 20px;
     background-color: #28a745;
-    color: #fff;
+    color: white;
+    font-size: 16px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make button responsive */
+    max-width: 200px; /* Set a maximum width */
+    display: block;
+    margin-top: 10px; /* Adds margin between last input and button */
 }
 
 button:hover {
@@ -59,21 +99,30 @@ button:hover {
 }
 
 .records-section {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
-table th, table td {
-    padding: 10px;
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
     text-align: left;
-    border-bottom: 1px solid #ddd;
 }
 
-table th {
+th {
     background-color: #f2f2f2;
+    color: #333;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
 }

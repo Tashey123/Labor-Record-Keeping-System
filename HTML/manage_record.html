@@ -21,11 +21,14 @@
                 <label for="job">Job Title:</label>
                 <input type="text" id="job" required>
 
+                <label for="date">Payment Date:</label>
+                <input type="date" id="date" required>
+
                 <label for="hours">Worked Hours:</label>
-                <input type="number" id="hours" required>
+                <input type="number" id="hours" required min="0">
 
                 <label for="rate">Hourly Rate:</label>
-                <input type="number" id="rate" required>
+                <input type="number" id="rate" required min="0">
 
                 <button type="submit">Add Record</button>
             </form>
@@ -38,6 +41,7 @@
                     <tr>
                         <th>Name</th>
                         <th>Job Title</th>
+                        <th>Payment Date</th>
                         <th>Hours Worked</th>
                         <th>Hourly Rate</th>
                         <th>Total Pay</th>
@@ -47,6 +51,10 @@
                     <!-- Records will be added here -->
                 </tbody>
             </table>
+        </section>
+
+        <section class="view-records">
+            <a href="existing_record.html">View Existing Records</a>
         </section>
     </div>
 
