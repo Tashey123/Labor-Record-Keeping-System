@@ -52,8 +52,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #abc7ca;
+    color: #111010;
     height: 60vh;
     padding: 2rem;
 }
@@ -85,7 +85,7 @@ body {
 /* About Section */
 #about {
     padding: 50px 20px;
-    background-color: #F4F4F4; /* Light gray background */
+    background-color: #a2c3c7; 
     text-align: center;
 }
 
@@ -96,13 +96,13 @@ body {
 
 #about h2 {
     font-size: 36px;
-    color: #333; /* Dark gray */
+    color: #161616; 
     margin-bottom: 20px;
 }
 
 #about p {
     font-size: 18px;
-    color: #666; /* Medium gray */
+    color: #161616; 
     margin-bottom: 15px;
 }
 
@@ -110,13 +110,13 @@ body {
 .features {
     padding: 2rem;
     text-align: center;
-    background-color: #fff;
+    background-color: #a2bfc2;
 }
 
 .features h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #0a0a0a;
 }
 
 .features ul {
@@ -128,7 +128,7 @@ body {
 .features ul li {
     margin: 0.5rem 0;
     font-size: 1.2rem;
-    color: #007bff;
+    color: #08090a;
 }
 
 /* Footer */

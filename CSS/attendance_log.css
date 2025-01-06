@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #abc7ca;
 }
 
 .container {
     width: 80%;
     margin: 20px auto;
-    background: #fff;
+    background: #e6e1e1;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -20,7 +20,7 @@ header {
 }
 
 h1, h2 {
-    color: #333;
+    color: #0e0e0e;
 }
 
 table {
@@ -29,14 +29,14 @@ table {
     margin: 20px 0;
 }
 
-table th, table td {
-    border: 1px solid #ddd;
+th, td {
+    border: 1px solid #ccc;
     padding: 8px;
     text-align: left;
 }
 
 table th {
-    background-color: #f8f8f8;
+    background-color: #829df5;
     font-weight: bold;
 }
 
@@ -45,7 +45,7 @@ table th {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
-    color: white;
+    color: rgb(17, 16, 16);
     background-color: #007BFF;
     text-decoration: none;
     border-radius: 4px;

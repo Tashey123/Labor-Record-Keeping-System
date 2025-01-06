@@ -28,6 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
         }
 
-        resultDisplay.textContent = `Employee ${name}'s ${calculationType} wage: $${totalWage.toFixed(2)}`;
+        resultDisplay.textContent = `Employee ${name}'s ${calculationType} wage: Nu.${totalWage.toFixed(2)}`;
     });
 });
